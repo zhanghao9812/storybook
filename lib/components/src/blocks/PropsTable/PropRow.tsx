@@ -44,16 +44,17 @@ const StyledPropDef = styled.div(({ theme }) => ({
   fontSize: `${theme.typography.size.code}%`,
 }));
 
-export const PrettyPropType: React.FunctionComponent<PrettyPropTypeProps> = ({ type }) => (
-  <span>{JSON.stringify(type)}</span>
-);
+export const PrettyPropType: React.FunctionComponent<PrettyPropTypeProps> = ({ type }) => {
+  const formattedType = type && type.name ? type.name : type;
+  return <span>{formattedType}</span>;
+};
 
 export const PrettyPropVal: React.FunctionComponent<PrettyPropValProps> = ({ value }) => (
-  <span>{JSON.stringify(value)}</span>
+  <span>{value}</span>
 );
 
 export const PropRow: React.FunctionComponent<PropRowProps> = ({
-  row: { name, type, required, description, defaultValue },
+  row: { name, type, required, description, defaultValue, ChangeProp },
 }) => (
   <tr>
     <td>
@@ -67,5 +68,10 @@ export const PropRow: React.FunctionComponent<PropRowProps> = ({
       </StyledPropDef>
     </td>
     <td>{defaultValue === undefined ? '-' : <PrettyPropVal value={defaultValue} />}</td>
+    {ChangeProp && (
+      <td>
+        <ChangeProp />
+      </td>
+    )}
   </tr>
 );

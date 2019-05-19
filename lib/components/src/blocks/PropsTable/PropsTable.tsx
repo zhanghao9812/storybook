@@ -124,10 +124,15 @@ export enum PropsTableError {
 export interface PropsTableProps {
   rows?: PropDef[];
   error?: PropsTableError;
+  hasInteractiveProps?: boolean;
   // FIXME: table options
 }
 
-const PropsTable: React.FunctionComponent<PropsTableProps> = ({ rows, error = null }) => {
+const PropsTable: React.FunctionComponent<PropsTableProps> = ({
+  rows,
+  hasInteractiveProps,
+  error = null,
+}) => {
   if (error) {
     return <EmptyBlock>{error}</EmptyBlock>;
   }
@@ -141,6 +146,7 @@ const PropsTable: React.FunctionComponent<PropsTableProps> = ({ rows, error = nu
           <th>Name</th>
           <th>Description</th>
           <th>Default</th>
+          {hasInteractiveProps && <th>Knobs</th>}
         </tr>
       </thead>
       <tbody>

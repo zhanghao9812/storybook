@@ -5,6 +5,7 @@ import { action } from '@storybook/addon-actions';
 
 import { Input, Button, Select, Textarea } from './input/input';
 import { Field } from './field/field';
+import { Toggle } from './toggle/toggle';
 import { Spaced } from '../spaced/Spaced';
 
 const Flexed = styled.div({ display: 'flex' });
@@ -130,4 +131,11 @@ storiesOf('Basics|Form/Input', module)
         </Flexed>
       ))}
     </Spaced>
+  ));
+
+storiesOf('Basics|Form/Toggle', module)
+  .add('field', () => <Toggle onChange={ev => {}} />)
+  .add('initial value', () => <Toggle onChange={ev => {}} initialValue="false" />)
+  .add('custom labels', () => (
+    <Toggle onChange={ev => {}} initialValue="false" labelOn="Weekend" labelOff="No weekend" />
   ));

@@ -13,7 +13,7 @@ export { ScrollArea } from './ScrollArea/ScrollArea';
 
 // Forms
 export { Button } from './Button/Button';
-export { Form } from './form/index';
+export { Form, Toggle } from './form/index';
 
 // Tooltips
 export { WithTooltip } from './tooltip/WithTooltip';

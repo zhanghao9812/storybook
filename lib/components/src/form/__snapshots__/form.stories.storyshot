@@ -2754,3 +2754,290 @@ exports[`Storyshots Basics|Form/Textarea validations 1`] = `
   </div>
 </div>
 `;
+
+exports[`Storyshots Basics|Form/Toggle custom labels 1`] = `
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: 1px solid #DDDDDD;
+  border-radius: 30px;
+}
+
+.emotion-0 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.emotion-0:checked + label {
+  background: #DDDDDD;
+  color: #444444;
+}
+
+.emotion-1 {
+  cursor: pointer;
+  color: #999999;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  font-weight: 700;
+  padding: 6px 16px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  -webkit-transition: 150ms ease-in-out;
+  transition: 150ms ease-in-out;
+  -webkit-transition-property: background-color,font-weight;
+  transition-property: background-color,font-weight;
+  width: 50%;
+}
+
+.emotion-1:first-of-type {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.emotion-1:last-of-type {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+<div
+  class="emotion-4"
+>
+  <input
+    class="emotion-0"
+    id="toggle-on"
+    name="toggle"
+    type="radio"
+    value="true"
+  />
+  <label
+    class="emotion-1"
+    for="toggle-on"
+  >
+    Weekend
+  </label>
+  <input
+    checked=""
+    class="emotion-0"
+    id="toggle-off"
+    name="toggle"
+    type="radio"
+    value="false"
+  />
+  <label
+    class="emotion-1"
+    for="toggle-off"
+  >
+    No weekend
+  </label>
+</div>
+`;
+
+exports[`Storyshots Basics|Form/Toggle field 1`] = `
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: 1px solid #DDDDDD;
+  border-radius: 30px;
+}
+
+.emotion-0 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.emotion-0:checked + label {
+  background: #DDDDDD;
+  color: #444444;
+}
+
+.emotion-1 {
+  cursor: pointer;
+  color: #999999;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  font-weight: 700;
+  padding: 6px 16px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  -webkit-transition: 150ms ease-in-out;
+  transition: 150ms ease-in-out;
+  -webkit-transition-property: background-color,font-weight;
+  transition-property: background-color,font-weight;
+  width: 50%;
+}
+
+.emotion-1:first-of-type {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.emotion-1:last-of-type {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+<div
+  class="emotion-4"
+>
+  <input
+    class="emotion-0"
+    id="toggle-on"
+    name="toggle"
+    type="radio"
+    value="true"
+  />
+  <label
+    class="emotion-1"
+    for="toggle-on"
+  >
+    True
+  </label>
+  <input
+    class="emotion-0"
+    id="toggle-off"
+    name="toggle"
+    type="radio"
+    value="false"
+  />
+  <label
+    class="emotion-1"
+    for="toggle-off"
+  >
+    False
+  </label>
+</div>
+`;
+
+exports[`Storyshots Basics|Form/Toggle initial value 1`] = `
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: 1px solid #DDDDDD;
+  border-radius: 30px;
+}
+
+.emotion-0 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.emotion-0:checked + label {
+  background: #DDDDDD;
+  color: #444444;
+}
+
+.emotion-1 {
+  cursor: pointer;
+  color: #999999;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  font-weight: 700;
+  padding: 6px 16px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  -webkit-transition: 150ms ease-in-out;
+  transition: 150ms ease-in-out;
+  -webkit-transition-property: background-color,font-weight;
+  transition-property: background-color,font-weight;
+  width: 50%;
+}
+
+.emotion-1:first-of-type {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.emotion-1:last-of-type {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+<div
+  class="emotion-4"
+>
+  <input
+    class="emotion-0"
+    id="toggle-on"
+    name="toggle"
+    type="radio"
+    value="true"
+  />
+  <label
+    class="emotion-1"
+    for="toggle-on"
+  >
+    True
+  </label>
+  <input
+    checked=""
+    class="emotion-0"
+    id="toggle-off"
+    name="toggle"
+    type="radio"
+    value="false"
+  />
+  <label
+    class="emotion-1"
+    for="toggle-off"
+  >
+    False
+  </label>
+</div>
+`;

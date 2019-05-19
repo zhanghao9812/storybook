@@ -25,7 +25,8 @@ interface ChangePropProps {
  * Unknown fields render null.
  */
 const getField = ({ prop, changeProp }: FieldProps) => {
-  if (prop.type === 'boolean') return <BooleanField prop={prop} changeProp={changeProp} />;
+  if (prop.type === 'boolean' || prop.type === 'bool')
+    return <BooleanField prop={prop} changeProp={changeProp} />;
 
   // If type matches a union selector like: "small" | "large"
   if (prop.type.match(/"(.*?)" \|/)) return <UnionField prop={prop} changeProp={changeProp} />;
@@ -46,7 +47,6 @@ export const ChangeProp = (props: ChangePropProps) => {
   const propsContext = useContext(PropsContext);
 
   if (!propsContext) return null;
-
   const { name } = props;
   const prop = propsContext.propsState[name];
   const changeProp = (value: any) =>

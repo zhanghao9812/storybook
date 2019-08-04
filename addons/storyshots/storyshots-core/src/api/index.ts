@@ -5,10 +5,12 @@ import snapshotsTests from './snapshotsTestsTemplate';
 import integrityTest from './integrityTestTemplate';
 // @ts-ignore
 import loadFramework from '../frameworks/frameworkLoader';
+import { StoryshotsOptions } from './StoryshotsOptions';
 
 global.STORYBOOK_REACT_CLASSES = global.STORYBOOK_REACT_CLASSES || {};
 
-const methods = ['beforeAll', 'beforeEach', 'afterEach', 'afterAll'];
+type TestMethod = 'beforeAll' | 'beforeEach' | 'afterEach' | 'afterAll';
+const methods: TestMethod[] = ['beforeAll', 'beforeEach', 'afterEach', 'afterAll'];
 
 function callTestMethodGlobals(testMethod: any) {
   methods.forEach(method => {
@@ -21,7 +23,7 @@ function callTestMethodGlobals(testMethod: any) {
 const isDisabled = (parameter: any) =>
   parameter === false || (parameter && parameter.disable === true);
 
-function testStorySnapshots(options = {}) {
+function testStorySnapshots(options: StoryshotsOptions = {}) {
   if (typeof describe !== 'function') {
     throw new Error('testStorySnapshots is intended only to be used inside jest');
   }
